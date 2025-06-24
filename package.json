@@ -253,5 +253,8 @@
     "homepage":  "https://github.com/ryanstryin/xoptymiz-landing#readme",
     "devDependencies":  {
                             "nodemon":  "^3.1.10"
-                        }
+                        },
+    "engines":  {
+                    "node":  "18.x"
+                }
 }
