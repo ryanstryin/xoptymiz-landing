@@ -1,8 +1,12 @@
-{
+﻿{
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
+      "src": "chrome-extension.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/**",
       "use": "@vercel/static"
     }
   ],
@@ -12,31 +16,8 @@
       "dest": "/chrome-extension.html"
     },
     {
-      "src": "/demo",
-      "dest": "/demo.html"
-    },
-    {
       "src": "/",
-      "dest": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
+      "dest": "/chrome-extension.html"
     }
   ]
 }
