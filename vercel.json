@@ -1,15 +1,5 @@
 ﻿{
   "version": 2,
-  "builds": [
-    {
-      "src": "chrome-extension.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "/chrome-extension",
